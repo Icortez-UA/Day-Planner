@@ -1,12 +1,13 @@
 $(document).ready(function(){
-    renderText();
     var time = moment().local().format("dddd, MMMM Do YYYY");
-
-     $('p').append(time);
+    
+    $('p').text(time);
+    renderText();
     //var timeMatch =  moment().hour();
     //console.log(timeMatch);
     $('form').submit("submit",function(e){
         e.preventDefault();
+        $('input').empty();
         var nineText = $("#9-text").val();
         var tenText = $('#ten-am').val();
         var elevenText= $('#eleven-am').val();
@@ -31,11 +32,14 @@ $(document).ready(function(){
         console.log(event.type);
         localStorage.setItem("schedule",JSON.stringify(schedule));
         
-        
+        renderText();
     })
             function renderText(){
                 var sched = JSON.parse(localStorage.getItem('schedule'));
-        
+                if(sched === null){
+                    return;
+                }
+                else{
                  $("#9-text").val(sched.nine);
                  $('#ten-am').val(sched.ten);
                  $('#eleven-am').val(sched.eleven);
@@ -45,13 +49,13 @@ $(document).ready(function(){
                  $('#three-pm').val(sched.three);
                  $('#four-pm').val(sched.four);
                  $('#five-pm').val(sched.five);
-                console.log(sched);
+                console.log(sched);}
             }
-            //var inputTime = +$('input').attr('data-time');
-            //console.log(inputTime);
-            // use time to change class on inputs ???????
-            // match time value to input attr that matches time to change class for present (present color)
-            // use time value to change classes for inputs that are less than that value (past color)
-            // use time value to change classes for the inputs that are more than the value (future color)
+    //var inputTime = +$('input').attr('data-time');
+    //console.log(inputTime);
+    // use time to change class on inputs ???????
+    // match time value to input attr that matches time to change class for present (present color)
+    // use time value to change classes for inputs that are less than that value (past color)
+    // use time value to change classes for the inputs that are more than the value (future color)
     
 });
