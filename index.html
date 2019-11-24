@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     
-    
+    <script src=https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -17,9 +17,9 @@
 </head>
 <body>
         <div class="jumbotron jumbotron-fluid ">
-                <div class="container">
+                <div class="container text-center">
                   <h1>Daily Planner</h1>
-                  <p>Bootstrap is the most popular HTML, CSS...</p>
+                  <p></p>
                 </div>
               </div>
 
@@ -27,13 +27,13 @@
     <div class= "container">
 
         <form>
-            <div class="input-group mb-1 justify-content-center input-group-lg">
+            <div class="input-group mb-1 justify-content-center input-group-lg h-100">
                 <div class="input-group-prepend">
                     <span class="input-group-text">9AM</span>
                 </div>
-                <input type="text" class="form-control">
+                <input id= "9-text" type="text" class="form-control">
                 <div class="input-group-append">
-                    <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
+                    <button id='9-save' class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
             </div>
             
@@ -47,7 +47,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">10AM</span>
                 </div>
-                <input type="text" class="form-control">
+                <input id= 'ten-am' type="text" class="form-control">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
@@ -63,7 +63,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">11AM</span>
                 </div>
-                <input type="text" class="form-control">
+                <input id= "eleven-am" type="text" class="form-control">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
@@ -79,7 +79,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text ">12PM</span>
                 </div>
-                <input type="text" class="form-control">
+                <input id= "twelve-pm" type="text" class="form-control">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
@@ -96,7 +96,7 @@
                     <span class="input-group-text">1PM</span>
                 </div>
                 <input type="text" class="form-control">
-                <div class="input-group-append">
+                <div id= "one-pm" class="input-group-append">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">2PM</span>
                 </div>
-                <input type="text" class="form-control">
+                <input id= "two-pm" type="text" class="form-control">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
@@ -127,7 +127,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">3PM</span>
                 </div>
-                <input type="text" class="form-control">
+                <input id= "three-pm" type="text" class="form-control">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
@@ -144,7 +144,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">4PM</span>
                 </div>
-                <input type="text" class="form-control">
+                <input id= "four-pm" type="text" class="form-control">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
@@ -161,7 +161,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">5PM</span>
                 </div>
-                <input type="text" class="form-control">
+                <input id= "five-pm" type="text" class="form-control">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit"><i class="far fa-save"></i></button>
                 </div>
