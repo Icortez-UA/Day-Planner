@@ -3,8 +3,8 @@ $(document).ready(function(){
     var time = moment().local().format("dddd, MMMM Do YYYY");
 
      $('p').append(time);
-
-
+    //var timeMatch =  moment().hour();
+    //console.log(timeMatch);
     $('form').submit("submit",function(e){
         e.preventDefault();
         var nineText = $("#9-text").val();
@@ -47,7 +47,11 @@ $(document).ready(function(){
                  $('#five-pm').val(sched.five);
                 console.log(sched);
             }
-    
-  
+            //var inputTime = +$('input').attr('data-time');
+            //console.log(inputTime);
+            // use time to change class on inputs ???????
+            // match time value to input attr that matches time to change class for present (present color)
+            // use time value to change classes for inputs that are less than that value (past color)
+            // use time value to change classes for the inputs that are more than the value (future color)
     
 });
